@@ -8,6 +8,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { MessageCircle, Heart, Repeat2 } from 'lucide-react'
+import Image from "next/image";
 
 interface Comment {
   id: number
@@ -154,9 +155,14 @@ export default function TwitterClone() {
     ))
   }
 
-  return (
+  return (<div>
+    <Image src ="/twitter-X-.jpeg" alt ="upload file"
+          className="ml-10 my-4 m object-cover "
+          width={100}
+          height={100}/>
+        )
+        <g><path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"></path></g>
     <div className="max-w-2xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Twitter Clone</h1>
       
       <form onSubmit={handleNewTweet} className="mb-4">
         <div className="flex gap-2">
@@ -257,6 +263,7 @@ export default function TwitterClone() {
           </Card>
         ))}
       </div>
+    </div>
     </div>
   )
 }
