@@ -48,20 +48,57 @@ export default function TwitterClone() {
       retweets: 0,
       likes: 0,
       liked: false,
-      retweeted: false
+      retweeted: true
     },
     {
       id: 2,
       author: "Jane Smith",
       username: "janesmith",
-      content: "React y Next.js son geniales para crear aplicaciones web modernas.",
+      content: "Quien no arriesga, no gana.",
       avatar: "/placeholder.svg?height=40&width=40",
       comments: [],
       retweets: 1,
-      likes: 5,
-      liked: false,
+      likes: 45,
+      liked: true,
+      retweeted: true
+    },
+    {
+      id: 3,
+      author: "Carmen Gonzales",
+      username: "johndoe",
+      content: "¡Hola Twitter! Empezaré la Facultad hoy!.",
+      avatar: "/placeholder.svg?height=40&width=40",
+      comments: [
+        {
+          id: 1,
+          author: "Sarha Ro",
+          content: "Mucha suerte!",
+          avatar: "/placeholder.svg?height=30&width=30"
+        }
+      ],
+      retweets: 16,
+      likes: 55,
+      liked: true,
       retweeted: false
-    }
+    },{
+      id: 4,
+      author: "Paolo",
+      username: "Paolo22",
+      content: "giornata difficile:(",
+      avatar: "/placeholder.svg?height=40&width=40",
+      comments: [
+        {
+          id: 1,
+          author: "Carla Disteffano",
+          content: "¡domani andrà meglio",
+          avatar: "/placeholder.svg?height=30&width=30"
+        }
+      ],
+      retweets: 0,
+      likes: 10,
+      liked: true,
+      retweeted: false
+    },
   ])
   const [newTweet, setNewTweet] = useState("")
   const [commentDialogOpen, setCommentDialogOpen] = useState(false)
