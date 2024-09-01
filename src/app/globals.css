@@ -86,3 +86,13 @@
     @apply bg-background text-foreground;
   }
 }
+body {
+  background-color: black;
+  @media only screen and (min-width: 1500px) {
+    margin-left: 250px;
+  margin-right: 250px;
+
+     
+    }
+  }
+  
